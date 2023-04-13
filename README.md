@@ -29,3 +29,5 @@ https://drive.google.com/file/d/1s4CDYz7FRY1ajW_5Au0Q46xJnLxUDOAN/view
 ##### Reach me
 https://github.com/ReidRym
 
+https://reidrym.github.io/New-Weather-API/
+
