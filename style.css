@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 600px), (max-height: 500px) {
+}
+.header {
+  background-image: url("https://www.shutterstock.com/image-photo/photos-sky-during-different-weather-260nw-1899360634.jpg");
+
+  text-align: center;
+  color: white ;
+  padding: 20px;
+  border-style: double;
+  border-width: 50px;
+  border-color: black;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url("https://img-aws.ehowcdn.com/700x/www.onlyinyourstate.com/wp-content/uploads/2021/08/GettyImages-733491163.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#col-9,
+.col-9 {
+  
+  -webkit-box-shadow: 5px 5px 15px 9px rgba(0, 0, 0, 0.83);
+  box-shadow: 5px 5px 15px 9px rgba(0, 0, 0, 0.83);
+  border-radius: 10px;
+  display: none;
+}
+.searchbox {
+  
+  float: left;
+  width: 30%;
+  background: #f1f1f1fb;
+  padding: 10px 5%;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 0 5px #ddd;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightblue;
+  border: #000000 1px solid;
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+.searchbox:focus {
+  
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 27px;
+  border: 5px solid black;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ddd;
+  outline: none;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+::placeholder {
+  color: white;
+  /* text-shadow: 2px 2px 4px #000000; */
+}
+.card {
+  background-color: white;
+  width: 150px;
+  height: 275px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 4px 4px 10px 2px blueviolet;
+}
+
+.searchHistoryButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#forecast {
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 2%;
+}
+
+.history {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#currentWeather {
+  background-image: url("https://media.istockphoto.com/id/868098786/photo/thermometer-on-snow-shows-low-temperatures-zero-low-temperatures-in-degrees-celsius-and.jpg?b=1&s=170667a&w=0&k=20&c=n21SIzH1emvYJmePa_kg8r0AcdVu2vTOk327qk4tYzE=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.searchButton {
+  font-size: 25px;
+  color: white;
+  text-shadow: 4px 2px 4px #000000;
+  height: 60px;
+  width: 110px;
+  margin: 50px;
+  position: relative;
+  right: 50px;
+  border-radius: 10px;
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #0358c8 74%);
+  border: 4px solid black;
+  z-index: 1;
+}
+
+.searchButton:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, blue 0%, black 74%);
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.searchButton:hover {
+  color: #fff;
+}
+.searchButton:hover::after {
+  top: 0;
+  height: 100%;
+}
+.searchButton:active {
+  top: 2px;
+}
+.clearDataButton {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  height: 60px;
+  width: 110px;
+  margin: 50px;
+  position: relative;
+  right: 50px;
+  border-radius: 10px;
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #c8bb03 74%);
+  border: 4px solid black;
+  z-index: 1;
+}
+
+.clearDataButton:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, rgb(139, 20, 78) 0%, black 74%);
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.clearDataButton:hover {
+  color: #fff;
+}
+.clearDataButton:hover::after {
+  top: 0;
+  height: 100%;
+}
+.clearDataButton:active {
+  top: 2px;
+}
+
+h1 {
+  font-family: "Open Sans", Gadget, sans-serif;
+  font-size: 36px;
+  letter-spacing: 12px;
+  word-spacing: 12px;
+  color: #000000;
+  font-weight: 1700;
+  text-decoration: underline solid black;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  color: #000000;
+  color: #ffffff ;
+  text-shadow: 3px 5px 2px black;
+}
+h2 {
+  background-color: #66ccff;
+  padding: 10px;
+  border-radius: 10px;
+  color: white ;
+  text-shadow: 2px 2px 4px #000000;
+  border: 5px solid #0c2f47;
+}
+#city {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: #5a21d2;
+  background: -moz-radial-gradient(
+    center,
+    #5a21d2 0%,
+    #2cabff 50%,
+    #000000 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    #5a21d2 0%,
+    #2cabff 50%,
+    #000000 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    #5a21d2 0%,
+    #2cabff 50%,
+    #000000 100%
+  );
+  font-family: Georgia, serif;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffffff ;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+.history,
+p {
+  font-family: "Open Sans", Gadget, sans-serif;
+  font-size: 20px;
+  color: black;
+  text-shadow: 0 1px 0 white, 0 2px 0 white, 0 3px 0 white, 0 4px 0 white,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.searchHistory {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  color: black;
+  text-shadow: 2px 2px 4px white;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgb(28, 110, 164) 0%,
+    rgb(181, 193, 201) 50%,
+    rgb(20, 78, 117) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
